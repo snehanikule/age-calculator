@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+    <div class="container">
+        <h1 class="text-center">Age Calculator</h1>
+        <h5>Calculator age from date of birth and current date</h5>
+        <div class="text-center">
+            <label for="birth_day">Date of birth:
+                <br><input type="date" id="date_birth">
+            </label><br><br>
+
+            <label for="given_date">Given Date:
+                <br><input type="date" id="given_date">
+            </label>
+        </div>
+        <div><br>
+            <button onclick="calculateAge()">Calculate</button>
+
+        </div>
+            <h4 class="text-center" style="display: none;" id="msg" >Age result:</h4>
+            <div id="output_box">
+             <span id="years">-</span>
+             <span id="months">-</span>
+             <span id="days">-</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
